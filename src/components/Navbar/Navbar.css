@@ -1,13 +1,5 @@
-:root {
-    --hue-color: 226;
-    --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-}
-
 .NavbarItems {
-    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1)100%);
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -20,6 +12,12 @@
     justify-self: center;
     margin-left: 20px;
     cursor: pointer;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.navbar-logo span {
+    color: crimson;
 }
 
 .fa-react {
@@ -46,6 +44,7 @@
 
 .nav-links:hover {
     background-color: var(--first-color);
+    color: crimson;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
@@ -56,6 +55,7 @@
 
 .nav-links-mobile {
     display: none;
+    background-color: crimson;
 }
 
 .menu-icon {
@@ -78,7 +78,7 @@
         transition: all 0.5s ease;
     }
     .nav-menu.active {
-        background: #6668f4;
+        background: linear-gradient(60deg, #29323c 0%, #485563 100%);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -91,8 +91,8 @@
         display: table;
     }
     .nav-links:hover {
-        background-color: #7577fa;
-        color: #6668f4;
+        /* background-color: rgba(220, 20, 60, 0.637); */
+        color: crimson;
         border-radius: 0;
     }
     .navbar-logo {
@@ -121,14 +121,14 @@
         margin: 2rem auto;
         border-radius: 4px;
         width: 80%;
-        background: #4ad9e4;
+        background: crimson;
         text-decoration: none;
         color: #fff;
         font-size: 1.5rem;
     }
     .nav-links-mobile:hover {
         background-color: #fff;
-        color: #6568f4;
+        color: crimson;
         transition: 250ms;
     }
 }

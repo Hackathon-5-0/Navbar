@@ -1,0 +1,16 @@
+.FooterItems {
+    background: rgba(220, 20, 60, 0.418);
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.footer-seperator {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(128, 128, 128);
+}
